@@ -3,7 +3,7 @@ import React, { useRef, Suspense, useState, useEffect } from 'react'
 import { Canvas, useFrame } from 'react-three-fiber'
 import { EffectComposer, Noise, Glitch } from 'react-postprocessing'
 import { BlendFunction } from 'postprocessing'
-import { OrbitControls } from 'drei'
+
 
 const Box = () => {
   const ref = useRef()
@@ -28,7 +28,7 @@ export default function Effects() {
       <div className="effect">
         <Canvas>
           <Box />
-          <OrbitControls />
+
           <Suspense fallback={null}>
             <EffectComposer>
               <Glitch />

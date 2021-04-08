@@ -1,24 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Effects from './test.js';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+ ReactDOM.render(
+   <React.StrictMode>
+     <App /> 
+   </React.StrictMode>,
+   document.getElementById('root')
+ );
+
 // ReactDOM.render(
-//   <React.StrictMode>
+//   <React.Fragment>
 //     <App />
-//   </React.StrictMode>,
+
+//   </React.Fragment>,
 //   document.getElementById('root')
 // );
-
-ReactDOM.render(
-  <React.Fragment>
-    <App />
-    <Effects />
-  </React.Fragment>,
-  document.getElementById('root')
-);
 
 // ReactDOM.render(
 //   <React.Fragment>
