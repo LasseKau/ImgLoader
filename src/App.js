@@ -12,23 +12,11 @@ import UploadImages from "./components/image-upload.component";
 function App() {
   return (
     <div className="container">
-   
       <h4>Add Image</h4>
-
       <div className="content">
-      <Canvas>
-
-          <Suspense fallback={null}>
-            <EffectComposer>
-              <Glitch />
-              <Noise blendFunction={BlendFunction.MULTIPLY} />
-            </EffectComposer>
-          </Suspense>
-        </Canvas>
-        <UploadImages />
+      <UploadImages />
       </div>
     </div>
-    
   );
 }
 
