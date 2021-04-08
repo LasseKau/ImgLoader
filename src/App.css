@@ -5,6 +5,11 @@
 
 .content {
   margin: 20px 0;
+  background-color:	#696969;
+  color: black;
+  padding: 10px 25px;
+  text-align: center;
+
 }
 
 .preview {

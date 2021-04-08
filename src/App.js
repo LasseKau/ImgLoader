@@ -7,8 +7,8 @@ import UploadImages from "./components/image-upload.component";
 function App() {
   return (
     <div className="container">
-      <h3>bezkoder.com</h3>
-      <h4>React Image Upload with Preview</h4>
+   
+      <h4>Add Image</h4>
 
       <div className="content">
         <UploadImages />
