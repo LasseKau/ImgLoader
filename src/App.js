@@ -8,11 +8,19 @@ import UploadImages from "./components/image-upload.component";
 import "@reach/dialog/styles.css";
 
 
-export default function App() {
 
+
+  
+
+
+export default function App() {
+  //testing animations
+  const props = useSpring({opacity: 1, from: { opacity: 0 },})
+  
   return (
+  
     <div className="container">
-      <h1>Add Image</h1>
+      <animated.h1 style={props}>Upload your images</animated.h1>
       <div className="content"> 
       <UploadImages />
       </div>

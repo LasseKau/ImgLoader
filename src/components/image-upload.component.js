@@ -2,22 +2,23 @@ import React, { Component } from "react";
 import UploadService from "../services/file-upload.service";
 
 export default class UploadImages extends Component {
+  
   constructor(props) {
+
     super(props);
     this.selectFiles = this.selectFiles.bind(this);
     this.upload = this.upload.bind(this);
     this.uploadImages = this.uploadImages.bind(this);
-
+    
     this.state = {
       selectedFiles: undefined,
       previewImages: [],
       progressInfos: [],
       message: [],
-
       imageInfos: [],
     };
   }
-
+  
   componentDidMount() {
     UploadService.getFiles().then((response) => {
       this.setState({
@@ -116,6 +117,7 @@ export default class UploadImages extends Component {
               className="btn btn-success btn-sm"
               disabled={!selectedFiles}
               onClick={this.uploadImages}
+
             >
               Upload
             </button>
